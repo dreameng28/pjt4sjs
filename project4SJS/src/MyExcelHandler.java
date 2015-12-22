@@ -24,7 +24,7 @@ public class MyExcelHandler {
                 cell1=sheet.getCell(0,i);//（列，行）
                 cell2=sheet.getCell(1,i);
                 cell3=sheet.getCell(2,i);
-                if(("".equals(cell1.getContents())||(cell1.getContents() == null)))    //如果读取的数据为空
+                if(("end".equals(cell1.getContents())||(cell1.getContents() == null)))    //如果读取的数据为空
                     break;
                 KeyWord keyWord = new KeyWord();
                 keyWord.setCategory(cell2.getContents());
